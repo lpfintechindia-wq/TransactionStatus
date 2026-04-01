@@ -249,24 +249,7 @@ export function PaymentStatus({ status }: PaymentStatusProps) {
 
         {/* Action Buttons for Pending/Reject */}
         {!config.showRedirect && (
-          <div className="px-6 py-3 bg-slate-50 border-t border-slate-200 space-y-2">
-            {status === 'pending' && (
-              <>
-                
-                <button className="w-full bg-white border border-slate-200 text-slate-700 py-3 rounded-xl font-medium text-sm hover:bg-slate-50 transition-all">
-                  Contact Support
-                </button>
-              </>
-            )}
-            {status === 'reject' && (
-              <>
-                
-                <button className="w-full bg-white border border-slate-200 text-slate-700 py-3 rounded-xl font-medium text-sm hover:bg-slate-50 transition-all">
-                  Contact Support
-                </button>
-              </>
-            )}
-          </div>
+          null
         )}
       </div>
 
