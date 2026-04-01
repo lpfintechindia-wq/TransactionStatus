@@ -252,14 +252,7 @@ export function PaymentStatus({ status }: PaymentStatusProps) {
           <div className="px-6 py-3 bg-slate-50 border-t border-slate-200 space-y-2">
             {status === 'pending' && (
               <>
-                <button 
-                  className="w-full text-white py-3 rounded-xl font-medium text-sm transition-all hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]"
-                  style={{
-                    background: `linear-gradient(188.893deg, ${config.gradientFrom} 7.4574%, ${config.gradientTo} 99.258%)`
-                  }}
-                >
-                  Check Status
-                </button>
+                
                 <button className="w-full bg-white border border-slate-200 text-slate-700 py-3 rounded-xl font-medium text-sm hover:bg-slate-50 transition-all">
                   Contact Support
                 </button>
@@ -267,14 +260,7 @@ export function PaymentStatus({ status }: PaymentStatusProps) {
             )}
             {status === 'reject' && (
               <>
-                <button 
-                  className="w-full text-white py-3 rounded-xl font-medium text-sm transition-all hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]"
-                  style={{
-                    background: `linear-gradient(188.893deg, ${config.gradientFrom} 7.4574%, ${config.gradientTo} 99.258%)`
-                  }}
-                >
-                  Retry Payment
-                </button>
+                
                 <button className="w-full bg-white border border-slate-200 text-slate-700 py-3 rounded-xl font-medium text-sm hover:bg-slate-50 transition-all">
                   Contact Support
                 </button>
